@@ -11,8 +11,10 @@ public class Main {
             stack.push(decimal%2);
             decimal = decimal / 2;
         }
+        StringBuilder result = new StringBuilder();
         while(!stack.isEmpty()){
-            System.out.println(stack.pop());
+            result.append(stack.pop());
         }
+        System.out.println(result);
     }
 }
